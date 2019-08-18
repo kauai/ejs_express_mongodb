@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title><%= data.title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      .container{
+          display:flex;
+      }
+      ul{
+          list-style:none;
+      }
+      ul li{
+          margin:10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <div class="container">
+        <ul>
+            <li><h3>Names</h3></li>
+            <% data.forEach(item => { %>
+            <li><%= item.name %></li>
+            <% }) %>
+        </ul>
+
+        <ul>
+            <li><h3>Email</h3></li>
+            <% data.forEach(item => { %>
+            <li><%= item.email %></li>
+        <% }) %>
+        </ul>
+
+        <ul>
+            <li><h3>Username</h3></li>
+            <% data.forEach(item => { %>
+            <li><%= item.username %></li>
+        <% }) %>
+        </ul>
+     </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <h1>Materizando node js</h1>
+    <p>Welcome to <%= title %></p>
+      <% if(marca && model && number){%>
+        <h2><%= marca %></h2>
+        <h2><%= model %></h2>
+        <h2><%= number %></h2>
+        <a href="/cadastro">Voltar</a>
+    <%}%>
+  </body>
+</html>

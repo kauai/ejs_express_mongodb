@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul>
+    <% clientes.forEach(item => { %>
+       <li><%= item.nome %></li>
+    <% }) %>
+    </ul>
+  </body>
+</html>
